@@ -28,7 +28,10 @@ body {
   overflow-y: hidden;
   white-space: nowrap;
   user-select: none;
-  cursor: pointer;
+  cursor: move;
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
   transition: all 0.2s;
   transform: scale(0.98);
   position: relative;
@@ -39,7 +42,9 @@ body {
 
 .items.active {
   background: rgba(255,255,255,0.3);
+  cursor: move;
   cursor: grabbing;
+  cursor: -moz-grabbing;
   cursor: -webkit-grabbing;
   transform: scale(1);
 }
